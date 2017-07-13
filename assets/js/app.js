@@ -27,5 +27,21 @@ getJSON(url).then(function(respuesta){
 });
 
 var datosPlaneta = function (planeta) {
-    var nombre = planeta
+    var nombre = planeta.pl_name;
+    var masa = planeta.pl_masse;
+    var descubrimiento = planeta.pl_disc;
+    var telescopio = planeta.pl_telescope;
+    crear_tarjeta(nombre, masa, descubrimiento, telescopio);
 }
+
+//Creando elementos (createElement)
+var crear_tarjeta = function (nombre, masa, descubrimiento, telescopio){
+    var contenedor_tarjetas= document.getElementById("contenedor_planetas")
+    var card= createElement("div");
+    var card_image= createElement("div");
+    var imagen= createElement("img");
+}
+
+//Asignando atributos (setAttribute)
+
+//Agregando planetas (append)
