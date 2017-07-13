@@ -1,4 +1,5 @@
 var url = "data/earth-like-results.json";
+var planetas= [];
 
 function getJSON(url){
   return new Promise(function(resolve,reject){
@@ -13,6 +14,18 @@ function getJSON(url){
   })
 };
 
-getJSON("data/earth-like-results.json")
-.then(function(mensaje){return(getJSON(mensaje.results[0]))})
-.then(function(resultado){console.log(resultado)});
+getJSON(url).then(function(respuesta){
+    console.log(respuesta.results);
+
+    for (var i=0; i< respuesta.results.length; i++){
+        planetas.push(getJSON(respuesta.results[i]));
+        planetas[i].then(function(planeta){
+            console.log(planeta);
+            datosPlaneta(planeta);
+        });
+    };
+});
+
+var datosPlaneta = function (planeta) {
+    var nombre = planeta
+}
