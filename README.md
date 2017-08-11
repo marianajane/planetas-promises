@@ -1,5 +1,5 @@
 # Planetas-promises
-####Promesas de javascript
+#### Promesas de javascript
 Ejercicio de promesas con javascript
 
 ##### para correr:
@@ -7,6 +7,6 @@ Ejercicio de promesas con javascript
 #### 2. npm install express --save-dev
 #### 3. npm npm install materialize-css
 #### 4. Levantar servidor con node server.js
-#### 5. Ir al navegador en url: #### localhost:1234
+#### 5. Ir al navegador en url: localhost:1234
 
 
